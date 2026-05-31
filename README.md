@@ -29,13 +29,13 @@ Landing page moderna y responsive para **Sabores del Valle**, construida con **A
 
 ## 🚀 Empezando
 
-Puedes iniciar un proyecto similar ejecutando:
+Ejecuta el siguiente comando:
 
 ```bash
 npx @thebcms/cli create astro starter restaurant
 ```
 
-Y seguir las instrucciones en pantalla.
+Y sigue las instrucciones.
 
 ## 📋 Requisitos
 
@@ -77,42 +77,6 @@ restaurante-dl/
 └── package.json
 ```
 
-## 🚀 Instalación y Uso
-
-### Instalación
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/tu-usuario/restaurante-dl.git
-cd restaurante-dl
-
-# Instalar dependencias
-npm install
-
-# Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus credenciales de BCMS
-```
-
-### Desarrollo
-
-```bash
-# Iniciar servidor de desarrollo
-npm run dev
-
-# Abrir http://localhost:4321
-```
-
-### Producción
-
-```bash
-# Construir para producción
-npm run build
-
-# Vista previa de la build
-npm run preview
-```
-
 ## 🔧 Configuración de BCMS
 
 1. Crea una cuenta en [BCMS](https://thebcms.com)
@@ -130,35 +94,6 @@ npm run preview
 | season | Temporadas |
 | testimonial | Testimonios |
 
-## 📝 Variables de Entorno
-
-```env
-BCMS_API_KEY=tu_api_key
-BCMS_ORIGIN=https://tu-proyecto.bcms.app
-```
-
-## 🎨 Personalización
-
-### Cambiar colores
-
-Edita `tailwind.config.js`:
-
-```js
-theme: {
-    extend: {
-        colors: {
-            appBody: '#f5f5f0',
-            appAccent: '#1a3b2f',
-            appText: '#2c2c2a',
-        }
-    }
-}
-```
-
-### Cambiar fuentes
-
-Modifica `src/styles/fonts.css` y `Layout.astro`.
-
 ## 📱 Secciones del Sitio
 
 | Sección | Descripción | Estado |
@@ -169,20 +104,6 @@ Modifica `src/styles/fonts.css` y `Layout.astro`.
 | Reservaciones | Formulario de reserva | ✅ |
 | Sobre Nosotros | Historia y valores | ✅ |
 | Contacto | Información y mapa | ✅ |
-
-## 🐛 Solución de Problemas Comunes
-
-**Error "sizeTransforms undefined"**
-- Causa: Imagen no encontrada en BCMS
-- Solución: Verifica que todas las imágenes estén subidas y asignadas en BCMS
-
-**Hydration mismatch**
-- Causa: Inconsistencia entre servidor y cliente
-- Solución: Asegura que los textos sean consistentes
-
-**Error de conexión con BCMS**
-- Causa: Credenciales incorrectas
-- Solución: Verifica `.env` y la conexión a internet
 
 ## 📄 Licencia
 
